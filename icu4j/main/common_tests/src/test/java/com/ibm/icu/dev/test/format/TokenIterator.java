@@ -29,8 +29,10 @@ public class TokenIterator {
 
     private ResourceReader reader;
     private String line;
+
     @SuppressWarnings("JdkObsolete") // StringBuffer required by public API
     private StringBuffer buf;
+
     private boolean done;
     private int pos;
     private int lastpos;
