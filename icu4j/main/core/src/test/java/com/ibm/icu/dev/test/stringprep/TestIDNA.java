@@ -929,7 +929,7 @@ public class TestIDNA extends CoreTestFmwk {
                 new StringBuffer(
                         Utility.unescape(
                                 "\\u043f\\u00AD\\u034f\\u043e\\u0447\\u0435\\u043c\\u0443\\u0436\\u0435\\u043e\\u043d\\u0438\\u043d\\u0435\\u0433\\u043e\\u0432\\u043e\\u0440\\u044f\\u0442\\u043f\\u043e\\u0440\\u0443\\u0441\\u0441\\u043a\\u0438"));
-        StringBuffer expected = new StringBuffer("xn--b1abfaaepdrnnbgefbadotcwatmq2g4l");
+        StringBuilder expected = new StringBuilder("xn--b1abfaaepdrnnbgefbadotcwatmq2g4l");
         doTestCompareReferenceImpl(source);
         doTestToASCII(source.toString(), expected.toString(), IDNA.DEFAULT, null);
     }

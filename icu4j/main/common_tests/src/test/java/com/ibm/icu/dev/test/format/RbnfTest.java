@@ -1642,9 +1642,6 @@ public class RbnfTest extends CoreTestFmwk {
         }
     }
 
-    /* Test the method
-     *      public void process(StringBuffer buf, NFRuleSet ruleSet)
-     */
     @Test
     public void TestChineseProcess() {
         String ruleWithChinese =
@@ -1764,7 +1761,7 @@ public class RbnfTest extends CoreTestFmwk {
             } catch (Exception e) {
                 errln(
                         "RBNFChinesePostProcessor was not suppose to return an exception "
-                                + "when being formatted with parameters 0.0 and "
+                                + "when being formatted with "
                                 + ruleNames[i]);
             }
         }
