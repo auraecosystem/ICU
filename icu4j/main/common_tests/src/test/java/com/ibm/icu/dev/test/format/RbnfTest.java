@@ -1045,6 +1045,7 @@ public class RbnfTest extends CoreTestFmwk {
     @Test
     public void TestBigNumbers() {
         BigInteger bigI = new BigInteger("1234567890", 10);
+        @SuppressWarnings("JdkObsolete") // StringBuffer required by public API
         StringBuffer buf = new StringBuffer();
         RuleBasedNumberFormat fmt = new RuleBasedNumberFormat(RuleBasedNumberFormat.SPELLOUT);
         fmt.format(bigI, buf, null);
